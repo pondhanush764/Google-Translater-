@@ -20,7 +20,7 @@ app = Client(
 
 @app.on_message(filters.private & filters.command(['start']))
 async def start(client, message):
-	await message.reply_text(text =f"Hello **{message.from_user.first_name }** \n\n __I am simple Google Translater Bot \n I can translate any language to you selected language__\nPowered by [Tamil bots😍](t.me/tamilbots)",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Support❤" ,url="https://t.me/tamilsupport"),InlineKeyboardButton("Tamil Bots😍", url="https://t.me/tamilbots") ],[InlineKeyboardButton("Help😇", callback_data="translate_text") ]  ]  ) )
+	await message.reply_text(text =f"Hello **{message.from_user.first_name }** \nI am simple Google Translater Bot[😍](https://telegra.ph/file/729823022094f1b4734ec.jpg)\n I can translate anything in any language🥰🥰\nHit /help to start translate❤️\nPowered by [Tamil bots😍](t.me/tamilbots)",reply_to_message_id = message.message_id ,parse_mode="markdown", reply_markup=InlineKeyboardMarkup([ [                    InlineKeyboardButton("Support❤" ,url="https://t.me/tamilsupport"),InlineKeyboardButton("Tamil Bots😍", url="https://t.me/tamilbots")],[InlineKeyboardButton("Chatting Group🥳", url="https://t.me/tamilchatgroup") ] ]  ) )
                   
 
 
